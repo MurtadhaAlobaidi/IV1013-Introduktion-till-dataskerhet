@@ -2,7 +2,16 @@
 
 IV1013 Introduktion till datasäkerhet VT23
 
-git add .
-git status
-git commit -m 'test'
-git push origin main
+### To add to GitHub
+
+`git add .` <br>
+`git status` <br>
+`git commit -m 'test'` <br>
+`git push origin main` <br>
+
+### create branch
+
+`git branch -a` Show all branches <br>
+`git log` display all commit history <br>
+`git checkout -b alpha a07b638` create the new branch “-b” flag means “branch”, “alpha” is the branch name, “a07b638” is the commit hash or reference of the specific commit.<br>
+`git log --oneline --graph` verify the created branch <br>
