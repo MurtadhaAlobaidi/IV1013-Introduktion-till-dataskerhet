@@ -1,0 +1,7 @@
+1. Check with small key
+2. Check with medium-size key
+3. Check with 48-bit key
+4. Check with 64-bit key
+5.Encryption + decryption gives original plaintext (with small file).
+6.Encryption + decryption gives original plaintext (with medium-size file).
+7.Encryption + decryption gives original plaintext (with larg-size file). 
