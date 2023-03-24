@@ -9,6 +9,8 @@ IV1013 Introduktion till datasäkerhet VT23
 `git commit -m 'test'` <br>
 `git push origin main` <br>
 
+`git pull` before pushing again <br>
+
 ### create branch
 
 `git branch -a` Show all branches <br>
