@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.math.BigInteger;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -6,8 +7,7 @@ import java.util.Random;
 
 public class StreamCipher1 {
 
-    private static long key;
-
+    private static BigInteger key;
     /**
      * Encrypts or decrypts the input file using XOR and writes the result to the output file.
      *
@@ -15,7 +15,7 @@ public class StreamCipher1 {
      * @param outputFile The output file to store the result.
      * @param key        The key used for the encryption or decryption process.
      */
-    public static void encryptDecrypt(String inputFile, String outputFile, long key) {
+    public static void encryptDecrypt(String inputFile, String outputFile, BigInteger key) {
         try {
             // Create Paths for input and output files
             // I take inspiration to use "Path" from https://blogs.oracle.com/javamagazine/post/path-files-input-output
@@ -27,7 +27,7 @@ public class StreamCipher1 {
             byte[] outputBytes = new byte[inputBytes.length];
 
             // Initialize the pseudo-random number generator with the key
-            Random prng = new Random(key);
+            Random prng = new Random(key.longValue());
 
             // Perform the XOR operation on each byte of the input
             for (int i = 0; i < inputBytes.length; i++) {
@@ -52,7 +52,7 @@ public class StreamCipher1 {
 
         // Parse the key from the first argument
         try {
-            key = Long.parseLong(args[0]);
+            key = new BigInteger(args[0]);
         } catch (NumberFormatException e) {
             System.err.println("Invalid key: " + e.getMessage());
             System.exit(1);

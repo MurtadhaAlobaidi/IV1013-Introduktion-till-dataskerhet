@@ -1,4 +1,4 @@
-1. Check with small key
+1. Check with small key         (key 5-bit <text "5-bit">)
 2. Check with medium-size key
 3. Check with 48-bit key
 4. Check with 64-bit key
