@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Random;
 
 public class StreamCipher2 {
 
@@ -24,9 +25,12 @@ public class StreamCipher2 {
             byte[] inputBytes = Files.readAllBytes(inputPath);
             byte[] outputBytes = new byte[inputBytes.length];
 
-            // Perform the Caesar cipher operation on each byte of the input
+            // Initialize the pseudo-random number generator with the key
+            Random prng = new Random(key);
+
+            // Perform the XOR operation on each byte of the input
             for (int i = 0; i < inputBytes.length; i++) {
-                outputBytes[i] = (byte) (inputBytes[i] + key);
+                outputBytes[i] = (byte) (inputBytes[i] ^ prng.nextInt(256));
             }
 
             // Write the result to the output file
