@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import java.util.Random;
 
 public class StreamCipher {
-
+    // Java docs https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html
     private static BigInteger key;
 
     /**
