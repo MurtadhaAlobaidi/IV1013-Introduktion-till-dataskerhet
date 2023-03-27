@@ -4,4 +4,14 @@
 4. Check with 64-bit key
 5.Encryption + decryption gives original plaintext (with small file).
 6.Encryption + decryption gives original plaintext (with medium-size file).
-7.Encryption + decryption gives original plaintext (with larg-size file). 
+7.Encryption + decryption gives original plaintext (with larg-size file).
+
+Assignment//
+Stream Cipher Assignment          ---> 60
+One-way Hash Function Assignment  ---> 60
+
+TCP/IP Attack Assignment          ---> 75
+Linux Firewall Assignment         ---> 100
+
+Password Cracker Assignment       ---> try with that
+Hidden Encryption Assignment      ---> try  with that
